@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 .app{
@@ -15,6 +16,9 @@
     margin: 20px auto;
     border-radius: 5px;
     box-shadow: 5px 5px 5px grey;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: baseline; */
 }
 
 .header {
@@ -57,7 +61,8 @@ label {
     color: #152C44;
     display: block;
     margin: 10px 0;
-    
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .feels-input .myInput{
@@ -90,4 +95,68 @@ label {
     width: 150px;
     height: 55px;
     transition: all .1s linear;
+}
+
+.entry-container {
+    /* border: 1px solid black; */
+    padding: 10px;
+
+}
+.entry {
+    border: 3px solid whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px lightgray;
+}
+.title {
+    padding: 20px 10px;
+    color: #152C44;
+    text-align: center;
+}
+.temp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    /* flex-wrap: wrap; */
+}
+.temp-title {
+    color: #1A5BA9;
+    font-weight: 900;
+    font-size: 36px;
+    margin-right: 20px;
+}
+
+.city {
+    color: #1A5BA9;
+    font-weight: 900;
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+.temp div:nth-of-type(3) span{
+    display: block;
+    padding: 5px 0 0 0;
+    
+}
+i {
+    color: gray;
+}
+.temp div:nth-of-type(3) {
+    text-align: center;
+}
+
+.date {
+    padding: 10px;
+    color: #152C44;
+}
+
+.content-dev {
+    margin: 10px auto;
+    padding: 10px;
+}
+.content-dev span {
+    color: #152C44;
+    font-size: 18px;
+    font-weight: 900;
 }

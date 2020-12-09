@@ -3,20 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <title>Weather Journal</title>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet"> -->
+    
+    <script src="https://kit.fontawesome.com/afad5cebe0.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
+    <div class ="header">
+      <h1>Weather Journal App</h1>
+    </div>
     <div class = "app">
-
-      <div class ="header">
-        <h1>Weather Journal App</h1>
-      </div>
       <div class="container">
         <div class ="zip-input">
           <label for="zip">Enter Zipcode here</label>
-          <input type="text" id="zip" placeholder="enter zip code here">
+          <input type="text" id="zip" placeholder="Enter zip code here">
         </div>
         <div class ="feels-input">
           <label for="feelings">How are you feeling today?</label>
@@ -27,13 +28,24 @@
       </div>
       
 
-      <div class ="holder entry">
-        <div class = "title">Mos Recent Entry</div>
-      <div id = "entryHolder">
-        <div id = "date"></div> 
-      <div id = "temp"></div>
-      <div id = "content"></div>
-      </div>
+      <div class ="entry-container">
+        <div class = "title">
+          <h2>Most Recent Entry</h2>
+        </div>
+        <div class = "entry">
+          <div class = "temp">
+            <div><p class="temp-title">25 &deg;</p></div>
+            <div><p class="city">London</p></div>
+            <div><p class="icon"><i class="fas fa-cloud"></i><span>Cloudy</span></p></div>
+          </div>
+          <div id = "date-dev">
+            <p class="date">Saturday, 22 oct 2020</p>
+          </div> 
+        </div>
+        <div class = "content-dev">
+          <span>Your feelings:</span>
+          <p class="dev"></p>
+        </div>
       </div>
     </div> 
 
