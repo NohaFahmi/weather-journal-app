@@ -7,7 +7,7 @@ let input = document.querySelector('#zip');
 let userFeelings = document.querySelector('#feelings');
 const api_key = '6e982cc853f655889dc57517af0dd134';
 let dataObj = {}
-
+/* 
 document.querySelector('#generate').addEventListener('click',
     async function getTemperature () {
         let zipCode = input.value;
@@ -54,3 +54,4 @@ const postData = async (url, data) => {
     return newData;
 }
 
+ */
