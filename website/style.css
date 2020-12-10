@@ -1,111 +1,158 @@
-body{
-    background: #fffff8;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    /* background: #fffff8; */
+    /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#app{
-    display: grid;
-    grid-auto-rows: minmax(150px, auto);
-    /* grid-template-columns:  */
-    height:100vh;
-    background: #f23557;
-    color: #f0d43a;
-    justify-content: center;
-    grid-gap: 1em;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+.app{
+    border: 3px solid white;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: baseline; */
 }
 
-.holder{
-
-}
-
-.entry{
-    background: rgba(59, 74, 107, .4);
-}
-
-#entryHolder{
-
-}
-
-#date{
-
-}
-
-#temp{
-
-}
-
-#content{
-
-}
-
-.headline {
-
-}
-.title{
-
-}
-
-/*  Basic Styling To Override Default For Basic HTML Elements */
-label{
-    display:block;
-    font-size: 27px;
-}
-
-input{
-    display:block;
-    height: 60px;
-    width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+.header {
+    /* border: 1px solid black; */
+    /* border-radius: 10px; */
     border: none;
+    background-color: #152C44;
+    color: whitesmoke;
+    text-align: center;
 }
 
-button{
-    width: 400px;
-    height: 100px;
-    background: #3b4a6b;
-    color: #f0d43a;
-    font-size: 26px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
-    box-shadow: 2px 4px 5px #444;
-}
-h1{
-    font-size: 36px;
+.header h1 {
+    background-color: #152C44;
+    padding: 20px 0;
+
 }
 
-textarea{
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-/* Reset style for HTML element on active to have no border*/
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
+
+.zip-input {
+    margin: 20px 0;
+}
+
+.zip-input input {
+    border: 2px solid #1A5BA9;
+    height: 40px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px lightgray;
     outline: none;
+
 }
-/* Style for Placeholder Text*/
-::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
+label {
+    color: #152C44;
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
 
-} 
-  
-:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
+.feels-input .myInput{
+    outline: none;
+    border: 2px solid #1A5BA9;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 3px lightgray;
+}
 
-} 
-  
-::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
+.generate {
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: #4F8BB9;
+    border: 3px solid  #4F8BB9;
+    box-shadow: 3px 3px 3px lightgray;
+    color: whitesmoke;
+    font-size: 18px;
+    margin: 40px 0;
+    cursor: pointer;
+}
 
-} 
+.generate:hover {
+    background-color:  #152C44;
+    border: 3px solid   #152C44;
+    width: 150px;
+    height: 55px;
+    transition: all .1s linear;
+}
+
+.entry-container {
+    /* border: 1px solid black; */
+    padding: 10px;
+
+}
+.entry {
+    border: 3px solid whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px lightgray;
+}
+.title {
+    padding: 20px 10px;
+    color: #152C44;
+    text-align: center;
+}
+.temp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    /* flex-wrap: wrap; */
+}
+.temp-title {
+    color: #1A5BA9;
+    font-weight: 900;
+    font-size: 36px;
+    margin-right: 20px;
+}
+
+.city {
+    color: #1A5BA9;
+    font-weight: 900;
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+.temp div:nth-of-type(3) span{
+    display: block;
+    
+}
+
+.temp div:nth-of-type(3) {
+    text-align: center;
+}
+
+.date {
+    padding: 10px;
+    color: #152C44;
+}
+
+.content-dev {
+    margin: 10px auto;
+    padding: 10px;
+}
+.content-dev span {
+    color: #152C44;
+    font-size: 18px;
+    font-weight: 900;
+}
